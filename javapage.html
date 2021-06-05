@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="javascript.js">
+
+</script>
+<head>
+	<title> Construction Website </title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="javascript.js"></script>
+	<style type="text/css">
+      
+   .Box{
+   border:3px black solid;
+   padding :10px;
+   border-radius: 20px;
+   margin-bottom: 20px;
+
+}
+
+   </style>
+
+<script>
+
+
+         function validate()
+      {
+         if( document.getElementById("t1").value== "")
+         {
+            alert( "Please provide your name!" );
+            return false;
+         }
+
+
+         if( document.getElementById("t2").value== "")
+         {
+            alert( "Please provide password" );
+            return false;
+         }
+         	
+
+         if( document.getElementById("t3").value== "")
+         {
+            alert( "Retype Password");
+            return false;
+         }
+
+         if(t2.value!=t3.value)
+         {
+            alert("Password Mismatch, Provide same password");
+            return false;
+         }
+
+
+         var emailID = document.getElementById("t4").value;
+         var atpos = emailID.indexOf("@");
+         var dotpos = emailID.lastIndexOf(".");       
+         if (document.getElementById("t4").value == "" || atpos < 1 || ( dotpos < atpos+2 )) 
+         {
+            alert("Please enter correct email ID");
+            return false;
+         }
+
+
+         var option=document.getElementsByName('Gender');
+
+         if (!(option[0].checked || option[1].checked)) {
+             alert("Please Select Your Gender");
+             return false;
+         }
+
+
+         var abc = document.getElementById("t6").value;
+                
+         if( document.getElementById("t6").value == "")
+         {
+            alert( "Please provide zip code." );
+            return false;
+         }
+         if(abc<5)
+         {
+            alert("ZipCode cannot be less than 5 digits")
+            return false;
+         }
+
+         
+
+         
+         if( document.getElementById("t7").value == "-1" )
+         {
+            alert( "Please select country code" );
+            return false;
+         }
+
+
+         var num = document.getElementById("t8").value;
+         if( document.getElementById("t8").value == "")
+         {
+            alert( "Phone number cannot be left blank" );
+            return false;
+         }
+         if(num<10)
+         {
+            alert("Phone number cannot be less than 10 digits");
+            return false;
+         }
+
+
+         {
+            alert("form submitted successfully");
+         return( true );
+         }
+      }
+
+
+      </script>
+</head>
+<body onload="put()">
+	<div class="main_container">
+		<nav class="header">
+			<ul>
+				<li><img src=""></li>
+				<li>Contact: 9876543210</li>
+				<li>Email: construction@noteandsave.com</li>
+				<li>Comapany Location</li>
+				<li><a href="loginpage.html">Login</a></li>
+			</ul>
+		</nav>
+
+		<div class="header_nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about_us.html">About Us/ History</a></li>
+				<li><a href="our_business.html">Our Business</a></li>
+				<li><a href="project.html">Projects</a></li>
+				<li><a href="media.html">MEDIA</a></li>
+				<li><a href="career.html">CAREER</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+				<li><a href="javapage.html">Order your items</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="slider_orderyouritem"></div>
+	<div class="Box">
+	<form name="myForm" onsubmit="return(validate());">
+		
+	<h1><center>Form Validations </center></h1>
+<table>
+<tr>
+<td>Name:
+</td>
+</tr>
+
+<tr>
+<td><input type="text" placeholder="Name" name"" id="t1">
+</td>
+</tr>
+
+
+<tr>
+<td>Password:
+</td>
+</tr>
+
+<tr>
+<td><input type="Password" placeholder="**********" name"" id="t2">
+</td>
+</tr>
+
+
+<tr>
+<td>Retype Password:
+</td>
+</tr>
+
+<tr>
+<td><input type="Password" placeholder="**********" name"" id="t3">
+</td>
+</tr>
+
+<tr>
+<td>Email:
+</td>
+</tr>
+
+<tr>
+<td><input type="mail" placeholder="Email" name"" id="t4">
+</td>
+</tr>
+
+
+<tr>
+<td>Gender
+</td>
+<td>
+<input type="radio" name="Gender" id="t5">Male
+<input type="radio" name="Gender" id="t5">Female
+</td>
+</tr>
+<tr></tr>
+
+
+<tr>
+<td>ZipCode:
+</td>
+</tr>
+
+<tr>
+<td><input type="text" placeholder="12345" name"" id="t6">
+</td>
+</tr>
+
+
+
+<tr>
+<td>Phone No:
+</td>
+<td>
+<select name="Phone Number" id="t7">
+<option value="-1" selected>[choose yours]</option>
+<option>88</option>
+<option>91</option>
+<option>75</option>
+<option>81</option>
+<option>93</option>
+<option>96</option>
+</select>
+<input type="Phone"  placeholder="8899223344" name"" id="t8">
+</td>
+</tr>
+
+
+</div>
+	<div class="footer_nav" id="footer_nav">
+			<ul>
+				<li class="main_left"><a href="whatwedo.html">What we do?</a></li>
+				<li><a href="#">(Highway)</a></li>
+				<li><a href="#">(Bridges)</a></li>
+				<li><a href="#">(Emulsion)</a></li>
+				<li><a href="#">(Building)</a></li>
+			</ul>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project | Construction Website</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="main_container">
+		<nav class="header">
+			<ul>
+				<li><img src=""></li>
+				<li>Contact: 9876543210</li>
+				<li>Email: construction@noteandsave.com</li>
+				<li>Comapany Location</li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</nav>
+
+		<div class="header_nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about_us.html">About Us/ History</a></li>
+				<li><a href="our_business.html">Our Business</a></li>
+				<li><a href="project.html">Projects</a></li>
+				<li><a href="media.html">MEDIA</a></li>
+				<li><a href="career.html">CAREER</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+				<li><a href="javapage.html">Order your items</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="slider_img_project1"></div>
+	
+	<div class="Login_page">
+		<h1>LOGIN HERE</h1>
+		<p>
+
+<form name="login">
+Username<input type="text" name="userid"/><br>
+Password<input type="password" name="pswrd"/><br>
+<input type="button" onclick="check(this.form)" value="login"/>
+<input type="reset" value="cancel"/>
+</form>
+<script >
+function check(form)/*function to check userid & password*/
+{
+/*the following code checks whether the entered userid and password are matching*/
+if(form.userid.value == "anandita"  &&  form.pswrd.value =="password")
+{
+window.open("hello.html") /*opens the target page while Id & password matches*/
+}
+else
+{
+alert("error password or username")/*displays error message*/
+}
+}
+</script>
+</p>
+</div>
+<div class="footer_nav">
+	                         <ul>
+				<li class="main_left"><a href="#">What we do?</a></li>
+				<li><a href="#">(Highway)</a></li>
+				<li><a href="#">(Bridges)</a></li>
+				<li><a href="#">(Emulsion)</a></li>
+				<li><a href="#">(Building)</a></li>
+			</ul>
+		</div>
+</body>
+</html>
